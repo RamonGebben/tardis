@@ -1,6 +1,6 @@
 #! /bin/sh
 
-mkdir /tardis
+mkdir -p /tardis
 
 # Initial Upgrade to zero-day
 apt-get update
@@ -37,7 +37,6 @@ echo "%tardis   ALL=(ALL:ALL) NOPASSWD:ALL" > /etc/sudoers.d/tardis
 chmod 0440 /etc/sudoers.d/tardis
 
 # Checkout Tardis
-mkdir -p /tardis
 cd /tardis
 git clone https://github.com/RamonGebben/tardis.git .
 mkdir -p /tardis/sites
