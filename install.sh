@@ -23,7 +23,7 @@ apt-get update
 
 # Apt-get install
 apt-get -y install mosh byobu git toilet fail2ban python-software-properties python g++ make
-apt-get -y install nodejs
+apt-get -y install nodejs npm
 
 ## NPM install
 npm -g install sails
